@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario ejercicio 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="estilo-1">
+
+    <button id="btn-volver" type="button" onclick="location.href='index.html'">VOLVER</button>
+    
+    <div class="formulario-container">
+        <h1>Formulario de Datos Personales</h1>
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" oninput="validarEmail()" required>
+
+
+            <label for="date">Fecha de Nacimiento:</label>
+            <input type="date" id="date" name="date" required>
+
+
+            <label for="pais">País de residencia:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <br>
+            <button type="submit" value="Enviar">Enviar</button>
+
+        </form>
+        <br>
+        <button class="btn1" onclick="aplicarEstilo1()">Estilo 1</button>
+
+        <button class="btn2" onclick="aplicarAltoContraste()">Estilo de Alto Contraste</button>
+    </div>
+
+    <script src="ejercicio-2.js"></script>
+    <script src="ejercicio-3.js"></script>
+</body>
+
+</html>
